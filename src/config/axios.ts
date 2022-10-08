@@ -1,6 +1,6 @@
 import axios, { AxiosError, AxiosRequestConfig, AxiosInstance } from "axios";
-import environment from "@constants/environment";
-import storageKeys from "@constants/storageKeys";
+import environment from "shared/constants/environment";
+import storageKeys from "shared/constants/storageKeys";
 
 const { artsyAPIUrl } = environment;
 const { userTokenKey } = storageKeys;
@@ -28,6 +28,7 @@ const createAxiosInstance = ({
   baseUrl = defaultBaseUrl,
   requestInterceptor = defaultRequestInterceptor,
 }: ICreateAxiosInstance = defaultConfig) => {
+  console.log({ baseUrl });
   const axiosInstance = axios.create({
     baseURL: baseUrl,
   });

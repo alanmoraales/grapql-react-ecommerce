@@ -3,4 +3,4 @@ import GraphQL from "./graphQL";
 
 const artsyGraphQLApi = GraphQL(createAxiosInstance());
 
-export { artsyGraphQLApi };
+export default artsyGraphQLApi;

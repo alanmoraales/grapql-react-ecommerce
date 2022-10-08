@@ -16,8 +16,8 @@ const GraphQL = (axios: AxiosInstance) => {
 
   const fetchQuery = async <T>(
     template: string,
-    variables: GraphQLQueryVariables
-  ) => post<T>(JSON.stringify({ query: template, variables }));
+    variables: GraphQLQueryVariables = {}
+  ) => post<T>({ query: template, variables });
 
   return {
     fetchQuery,

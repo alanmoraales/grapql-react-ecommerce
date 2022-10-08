@@ -18,7 +18,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",    "baseUrl": "./src/",
+    "jsx": "react-jsx",
+    "baseUrl": "./src/",
     "paths": {
       "@atoms/*": ["components/atoms/*"],
       "@molecules/*": ["components/molecules/*"],
@@ -27,8 +28,6 @@
       "@declarations/*": ["shared/declarations/*"],
       "@constants/*": ["shared/constants/*"]
     }
-
-
   },
   "include": [
     "src"
